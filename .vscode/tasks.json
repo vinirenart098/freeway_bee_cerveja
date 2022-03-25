@@ -1,0 +1,55 @@
+// Tasks for processing and p5
+// only for Windows
+{
+    "version": "0.1.0",
+    "command": "cmd", 
+    "isShellCommand": true,
+    "showOutput": "always",
+    "args": ["/C"],
+    "tasks": 
+    [
+        {
+        "taskName": "1. Run processing sketch",
+        "suppressTaskName": true,
+        "isBuildCommand": true,
+        "args": 
+            [
+            "C://processing-4.0b7//processing-java.exe",
+            "--force",
+            "--sketch=${workspaceRoot}",
+            "--output=${workspaceRoot}\\out",
+            "--run"
+            ]
+        },
+        {
+        "taskName": "2. Open Processing reference",
+        "suppressTaskName": true,
+        "isBuildCommand": true,
+        "args": 
+            [
+            "C://Users//Vicente Renart Neto//AppData//Local//Programs//Opera GX.exe",
+            "file://C://projetos//Freeway_versao_cerveja/index.html"
+            ]   
+        },
+        {
+        "taskName": "3. Run p5 script",
+        "suppressTaskName": true,
+        "isBuildCommand": true,
+        "args": 
+            [
+            "C://Users//Vicente Renart Neto//AppData//Local//Programs//Opera GX.exe",
+            "index.html"
+            ]   
+        },
+        {
+        "taskName": "4. Open p5 reference",
+        "suppressTaskName": true,
+        "isBuildCommand": true,
+        "args": 
+            [
+            "C://Users//Vicente Renart Neto//AppData//Local//Programs//Opera GX.exe",
+            "file://C://projetos//Freeway_versao_cerveja/index.html"
+            ]   
+        }
+    ]
+}
